@@ -145,7 +145,7 @@ export default function App() {
     async function initDb() {
       try {
         setLoading(true);
-        const pglite = new PGlite();
+        const pglite = new PGlite('idb://superstore');
         setDb(pglite);
 
         try {
